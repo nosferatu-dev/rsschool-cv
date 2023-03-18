@@ -5,77 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>CV</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-      color: #C9D1D9;
-      background-color: #0d1117;
-    }
-
-    html,
-    body {
-      height: 100%;
-      margin: 0 auto;
-      max-width: 720px;
-    }
-
-    ul {
-      padding: 10px 35px;
-    }
-
-    p {
-      padding: 10px 17px;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      box-sizing: border-box;
-      border: 2px solid #C9D1D9;
-      border-radius: 25px;
-      padding: 20px;
-      margin: 0 auto;
-      max-width: 720px;
-      box-shadow: 0px 0px 10px 10px #1d2633;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .avarice {
-      width: 150px;
-      border-radius: 75px;
-      box-shadow: 0px 0px 6px 2px #C9D1D9;
-    }
-
-    .user__name {
-      text-align: center;
-    }
-
-    main {
-      flex: 1 1 auto;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .logo {
-      width: 100px;
-    }
-
-    .git__profile,
-    .date {
-      align-self: center;
-    }
-  </style>
 </head>
 
 <body>
@@ -85,17 +16,17 @@
         <h1>Yusupov Pavel</h1>
         <nav>
           <ul>
-            <li><a href="#contact_info">Contact Info</a></li>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#skills_and_proficiency">Skills and Proficiency</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#recent_projects">Recent projects</a></li>
-            <li><a href="#code_examples">Code examples</a></li>
+            <li><a aria-label="Contact Info" href="#contact_info">Contact Info</a></li>
+            <li><a aria-label="Summary" href="#summary">Summary</a></li>
+            <li><a aria-label="Skills and Proficiency" href="#skills_and_proficiency">Skills and Proficiency</a></li>
+            <li><a aria-label="Languages" href="#languages">Languages</a></li>
+            <li><a aria-label="Recent projects" href="#recent_projects">Recent projects</a></li>
+            <li><a aria-label="Code examples" href="#code_examples">Code examples</a></li>
           </ul>
         </nav>
       </div>
       <div>
-        <a href="https://github.com/nosferatu-dev">
+        <a aria-label="git profile" href="https://github.com/nosferatu-dev">
           <img class="avarice" src="https://avatars.githubusercontent.com/u/80512811?v=4" alt="">
           <p class="user__name">nosferatu-dev</p>
         </a>
@@ -104,8 +35,8 @@
     <main>
       <h2 id="contact_info">Contact Info:</h2>
       <ul>
-        <li>E-mail: <a href="mailto:paulyousupov@gmail.com"> paulyousupov@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/nosferatu-dev/">nosferatu-dev</a></li>
+        <li>E-mail: <a aria-label="email" href="mailto:paulyousupov@gmail.com"> paulyousupov@gmail.com</a></li>
+        <li>GitHub: <a aria-label="git profile" href="https://github.com/nosferatu-dev/">nosferatu-dev</a></li>
       </ul>
       <h2 id="summary">Summary</h2>
       <p>
@@ -123,7 +54,7 @@
         <li>Figma</li>
       </ul>
       <h2 id="recent_projects">Recent projects</h2>
-      <p><a href="https://nosferatu-dev.github.io/rsschool-cv/">My CV</a></p>
+      <p><a aria-label="git cv" href="https://nosferatu-dev.github.io/rsschool-cv/">My CV</a></p>
       <h2 id="code_examples">Code examples (Interpolation)</h2>
       <pre>
         <code>
@@ -139,14 +70,14 @@
       </ul>
     </main>
     <footer>
-      <a class="git__profile" href="https://github.com/nosferatu-dev/">nosferatu-dev</a>
+      <a aria-label="git profile" class="git__profile" href="https://github.com/nosferatu-dev/">nosferatu-dev</a>
       <span class="date">2023</span>
-      <a href="https://rs.school/js/">
+      <a aria-label="rs.school" href="https://rs.school/js/">
         <img class="logo" src="rs_school_js.svg" alt="">
       </a>
     </footer>
   </div>
-  
+
 </body>
 
 </html>
